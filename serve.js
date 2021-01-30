@@ -1,17 +1,39 @@
+const fs = require('fs');
 const express = require('express');
 const app = express();
 const port = 3000;
+const file = 'counter.txt';
+const ZERO = '0';
 
-let COUNT = 1;
 
 app.get('/count', (req, res) => {
-    res.send(`あなたは${COUNT}人目のお客様です`);
-    COUNT++;
+    fs.readFile(file, (err, data) => {
+        const count = Number(data) + 1;
+
+        if (err) {
+            res.send(`エラーが発生しました ${err}`);
+            return (false);
+        }
+
+        fs.writeFile(file, String(count), (err) => {
+            if (err) {
+                res.send(`エラーが発生しました ${err}`);
+                return (false);
+            }
+
+            res.send(`あなたは${count}人目のお客様です`);
+        });
+    });
 });
 
 app.get('/reset', (req, res) => {
-    res.send('カウンタをリセットしました');
-    COUNT = 1;
+    fs.writeFile(file, ZERO, (err) => {
+        if (err) {
+            res.send(`エラーが発生しました ${err}`);
+            return(false);
+        }
+        res.send('カウンタをリセットしました');        
+    });
 });
 
 app.get('/api', (req, res) => {

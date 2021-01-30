@@ -60,3 +60,13 @@ http://localhost:3000/api
 http://localhost:3000/count
 http://localhost:3000/reset
 ```
+---
+
+## v0.8
+
+- カウンタ値をファイルへ保存
+- ファイルへの読み書きは非同期
+
+```
+http://localhost:3000/count
+```
