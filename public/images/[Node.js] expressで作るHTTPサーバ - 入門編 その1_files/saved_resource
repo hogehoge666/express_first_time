@@ -1,0 +1,152 @@
+.post-content pre{
+	margin-bottom: 10px;
+	padding: 5px;
+	/*overflow: hidden;*/
+	overflow-x: scroll;
+}
+code{
+	/* インライン用 */
+	background-color: lemonchiffon;
+	/* padding: 4px; */
+}
+.post-content img{
+	border: 1px solid gray;
+	/* margin: 10px; */
+}
+.post-content p{
+  line-height: 1.8;
+	letter-spacing: 0.05em;
+	margin-bottom: 15px;
+}
+.post-content ul, .post-content ol{
+	margin-left: 20px;
+}
+.post-content dl{
+	margin-left: 15px;
+}
+.post-content dl dd{
+	border-left: none;
+	margin-left: 15px;
+}
+
+.wp-caption{
+	padding: 10px;	
+}
+
+#header{
+	height: 400px;
+	background-image: url(https://blog.katsubemakito.net/wp-content/uploads/2018/01/header.jpeg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size:cover;
+}
+#header #logo{
+	width: 100%;
+	padding-top: 10px;
+  background-color: rgba(255,255,255,0.8);
+border-radius: 0.2em;
+}
+#header #logo a{
+	color: white;
+	font-size: 1.5em;
+}
+
+.side-widget-inner ul li a{
+	display: inline;
+}
+.widget_archive h3{
+	font-weight: bold;
+}
+.widget_archive ul li {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.widget_archive ul li a{
+	display: inline;
+}
+.widget_recent_entries ul li a{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.more-link{
+	margin-top: 30px;
+}
+
+.youtube-player{
+	width:100%;
+}
+
+.old-post-message{
+	width:100%;
+	border: 1px solid gray;
+	padding: 10px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.ws-alert1{
+	padding: 0.6em 1em;
+	margin: 2em 0;
+	color: #ff7d6e;
+	background: #ffebe9;
+	border: solid 3px #ff7d6e;
+	border-radius: 10px;
+	text-align: center;
+}
+.ws-alert1 p{
+	margin: 0; 
+	padding: 0;
+}
+
+.ws-navblock{
+	border: 1px solid silver;
+	background-color: #f9f9f9;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+/*
+.quiz-result-wrapper .quiz-score{
+	display: none;
+}
+.quiz-result-share-buttons .share-title{
+	display: none;
+}
+.quiz-result-share-buttons .buttons-container{
+	text-align: center;
+}
+*/
+
+/* Google検索 */
+.gsc-search-button{
+	display: none;
+}
+.gsc-input{
+	border: none;
+	padding: 1px;
+}
+
+.amazlet-box{
+	border: 1px solid lightgray;
+	border-radius: 0.5em;
+	padding: 10px;
+	margin-top: 30px !important;
+	margin-bottom: 30px !important;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.amazlet-name a{
+	font-weight: bold;
+}
+.amazlet-detail{
+	font-size: 10pt;
+}
+.amazlet-link{
+	width: 164px;
+	height: 26px;
+	background-image: url(https://images-fe.ssl-images-amazon.com/images/G/09/traffic/affiliate/assocbutt_or_detail._V371070159_.png);
+}
+.amazlet-link a{
+	opacity: 0;
+}
+

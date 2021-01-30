@@ -7,6 +7,12 @@ app.get('/', (req, res) => {
     console.log('/へアクセスがありました');
 });
 
+app.get('/images/:file', (req, res) => {
+    const file = req.params.file;
+    res.sendFile(`${__dirname}/public/images/${file}`);
+    console.log(`/images/${file}へアクセスがありました`);
+});
+
 app.listen(port, () => {
     console.log(`listening at http://localhost:${port}`);
 });
