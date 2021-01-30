@@ -2,6 +2,18 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+let COUNT = 1;
+
+app.get('/count', (req, res) => {
+    res.send(`あなたは${COUNT}人目のお客様です`);
+    COUNT++;
+});
+
+app.get('/reset', (req, res) => {
+    res.send('カウンタをリセットしました');
+    COUNT = 1;
+});
+
 app.get('/api', (req, res) => {
     const data = {
         'message': 'Hello World',

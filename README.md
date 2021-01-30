@@ -48,3 +48,15 @@ http://localhost:3000/?name=hoge
 ```
 http://localhost:3000/api
 ```
+
+---
+
+## v0.7
+
+- グローバル変数でオンメモリのカウンタを実装
+- サーバを再起動するとリセットされる
+
+```
+http://localhost:3000/count
+http://localhost:3000/reset
+```
