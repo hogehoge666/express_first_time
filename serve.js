@@ -2,6 +2,14 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+app.get('/api', (req, res) => {
+    const data = {
+        'message': 'Hello World',
+        'date': '2021-01-31'
+    };
+    res.json(data);
+});
+
 app.use(express.urlencoded({
     extended: true
 }));

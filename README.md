@@ -38,3 +38,13 @@ http://localhost:3000/?name=hoge
 ## v0.5
 
 - req.bodyでPOSTの入力フォームの内容を受けとりconsoleに出力
+
+---
+
+## v0.6
+
+- /apiでjsonを返信
+
+```
+http://localhost:3000/api
+```
