@@ -34,3 +34,7 @@ http://localhost:3000/?name=hoge
 ```
 
 ---
+
+## v0.4
+
+- req.bodyでPOSTの入力フォームの内容を受けとりconsoleに出力
