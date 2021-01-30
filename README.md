@@ -24,3 +24,13 @@ Express.jsの初心者向け講座の写経です。
 - req.paramsでリソース名を可変にする
 
 ---
+
+## v0.4
+
+- req.queryでGETクエリを受けとりconsoleに出力
+
+```
+http://localhost:3000/?name=hoge
+```
+
+---
