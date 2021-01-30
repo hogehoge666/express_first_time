@@ -3,8 +3,9 @@ const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
+    const name = req.query.name;
     res.sendFile(`${__dirname}/public/index.html`);
-    console.log('/へアクセスがありました');
+    console.log(`/へ${name}がアクセスがありました`);
 });
 
 app.get('/images/:file', (req, res) => {
